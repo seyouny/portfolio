@@ -1,23 +1,12 @@
-# Unit 08 Project 1 Homework: Professional Materials
+# Portfolio Build
 
-Now that you've had some practice with APIs and have a project to share, you'll be updating your portfolio page and other materials to build toward being employer competitive.
-If you are opting out of career services, this is still a required assignment. Part of being a web developer means being a part of a community. Having a place to share your projects is necessary if you're applying for jobs, but is still critical on your journey as a developer.
-
-## Requirements
-
-```
-Updated portfolio featuring project 1 and two exemplary homework assignments.
+This is the repository where I continuously build my portfolio throughout the course of the UC Berkeley Bootcamp and beyond. 
+Watch the progress of my skills and projects increase through this documentation.
 
 
-Update GitHub profile with pinned repositories featuring project 1 and two exemplary assignments.
-
-
-Updated resume
-
-
-Updated LinkedIn profile
-
-```
+### Deployed Link
+[GitHub] https://github.com/seyouny/portfolio
+[Heroku] https://quiet-ridge-53323.herokuapp.com/
 
 ### Built With
 
@@ -26,17 +15,12 @@ Updated LinkedIn profile
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 
-### Deployed Link
-
-https://seyouny.github.io/Portfolio/
-https://github.com/seyouny/Portfolio/
-
 ### Authors
 
 Seyoung Yoon
 
 - [Link to Github](https://github.com/seyouny)
-- [Link to LinkedIn](https://www.linkedin.com/in/stacey-yoon-bbaa7413a/)
+- [Link to LinkedIn](https://www.linkedin.com/in/seyouny/)
 
 See also the list of contributors who participated in this project.
 
