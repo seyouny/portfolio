@@ -6,7 +6,7 @@ Watch the progress of my skills and projects increase through this documentation
 
 ### Deployed Link
 [GitHub] https://github.com/seyouny/portfolio
-[Heroku] https://quiet-ridge-53323.herokuapp.com/
+[Heroku] https://seyouny.herokuapp.com/
 
 ### Built With
 
