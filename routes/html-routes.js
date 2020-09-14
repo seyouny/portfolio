@@ -28,4 +28,5 @@ module.exports = function(app) {
   app.get("/resume", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/html/resume.html"));
   });
+ 
 };
