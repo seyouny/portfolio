@@ -1,58 +1,29 @@
-// this is going to require express 
-var express = require("express");
-var exphbs = require("express-handlebars");
-var twilio = require('./twilio')
-require('dotenv').config()
+const express = require("express");
+const path = require("path");
+const PORT = process.env.PORT || 3001;
+const app = express();
+var db = require("./models"); // used in router
+const routes = require("./api-index"); // api routes for db
 
-// this sets up the express port .. i chose port # 8080
-var app = express();
-var PORT = process.env.PORT || 8080;
-
-// still working on this .. this needs to be redirected to a folder 
-// the folder needs to have .js files in it
-// var db = require("./models");
-
-// this sets up the express app to handle data parsing
+// Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(routes);
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
-// Set Handlebars as the default templating engine.
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+// Define API routes here
 
-// static directory 
-app.use(express.static("public"));
-
-// requiring routes .. 
-// require("./** folder name ** / ** file name ** )(app); // facebook
-// require("./** folder name ** / ** file name ** )(app); // google
-// require("./** folder name ** / ** files name **)(app); // twitter
-require("./routes/html-routes")(app);
-
-const userDatabase = [];
-
-// Create user endpoint
-app.post('/resume', (req, res) => {
-  console.log(req.body)
-  const { phone } = req.body;
-  const user = {
-    phone
-  };
-  console.log(user.phone.phone)
-
-  userDatabase.push(user);
-
-  const welcomeMessage = "Stacey is a recent graduate from UC Berkeley Extension's Full Stack Bootcamp. Her skills include Javascript, React.js, Node.js, MySQL, HTML/CSS, Python, and a strong passion for creating a greener environment.";
-
-  twilio(user.phone.phone, welcomeMessage);
-
-  res.status(201).send({
-    message: 'Account created successfully, kindly check your phone to activate your account!',
-    data: user
-  })
+// Send every other request to the React app
+// Define any API routes before this runs
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-// syncing the sequelize models and then starting the express app
 
+db.sequelize.sync({ force: false }).then(function() {
   app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
+    console.log("App listening on PORT " + "http://localhost:" + PORT);
   });
+});
