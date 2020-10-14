@@ -14,6 +14,7 @@ class Contact extends React.Component {
     render() {
         return (
             <div>
+                <Navb/>
                 <header class='masthead'>
                     <p class='masthead-intro'>Hi I'm</p>
                     <h1 class='masthead-heading'>Stacey!</h1>
