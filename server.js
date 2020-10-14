@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(routes);
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("./src/index.js"));
+  app.use(express.static("./public/index.html"));
 }
 
 // Define API routes here
@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === "production") {
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./src/index.js"));
+  res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
 db.sequelize.sync({ force: false }).then(function() {
