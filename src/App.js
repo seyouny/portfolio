@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Projects from "./pages/projects"
 import Resume from "./pages/resume"
 import Main from "./pages/main"
-import Contact from "./pages/links"
+import Contact from "./pages/aboutme/links"
 
 import './App.css';
 // import "./components/card/node_modules/react-bootstrap-carousel/dist/react-bootstrap-carousel.css";

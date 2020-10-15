@@ -1,6 +1,6 @@
 import React from 'react';
-import Project from "../components/card"
-import Navb from "../components/nav/navbar"
+import Project from "../../components/card"
+import Navb from "../../components/nav/navbar"
 // import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 
 import "./aboutme.css"
