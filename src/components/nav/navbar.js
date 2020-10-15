@@ -12,7 +12,7 @@ export default function Navb() {
     <Nav className="mr-auto">
         <Nav.Link href="/projects">Projects</Nav.Link>
         <Nav.Link href="/resume">Resume</Nav.Link>
-        <Nav.Link href="/links">Contact Me</Nav.Link>
+        <Nav.Link href="/links">About Me</Nav.Link>
     </Nav>
     
 </Navbar>)
