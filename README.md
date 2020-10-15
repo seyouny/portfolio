@@ -1,19 +1,12 @@
 # Portfolio Build
 
-As of 8/19/2020
-# Current issues are: 
-* Links aren't properly aligned, so GitHub pages isn't rendering proper pages
-* Images are not properly linked
-* Please run on local machine for full function
-
 This is the repository where I continuously build my portfolio throughout the course of the UC Berkeley Bootcamp and beyond. 
 Watch the progress of my skills and projects increase through this documentation.
 
-
-### Deployed Link
-[GitHub] https://github.com/seyouny/react-portfolio
-[GitHub Pages] https://seyouny.github.io/react-portfolio
-[Heroku] https://quiet-ridge-53323.herokuapp.com/
+I'm currently looking for a full-time software engineer position. Please visit my deployed link for my resume and more!
+### Links
+[GitHub] https://github.com/seyouny/portfolio
+[Deployed on Heroku] https://seyouny.herokuapp.com/
 
 ### Built With
 
