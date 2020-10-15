@@ -17,26 +17,7 @@ class Resume extends React.Component {
             <Navb />
 
             <div className="resume">
-                <h1>Resume</h1>
-                <hr></hr>
-                <h3>Education</h3>
-                <h5>UC Berkeley Extension - AUGUST 2020</h5>
-                <h6>Full-Stack Development </h6>
-                <br/>
-                    <h5>University of California, Irvine - JUNE 2020</h5>
-                    <h6>Bachelors of Science, Chemistry</h6>
-                <br></br>
-                    <h3>Skills</h3>
-                    <br/>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>HTML (+CSS)</li>
-                            <li>Python</li>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>MySQL</li>
-                            </ul>
-                            <a href="../images/Stacey_Yoon_Resume.pdf" download><img src="#"></img>Click Here for download</a>
+               <a href="/assets/img/Stacey_Yoon_Resume_10.pdf" download><img className= "resume"src="/assets/img/resume.png"></img>Click Here for download</a>
             </div>
          <Footer />
             </div>

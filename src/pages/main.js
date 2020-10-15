@@ -45,7 +45,6 @@ class Main extends React.Component {
                     <h4>Hello My Name is Stacey.
                     Check out what I'm currently working on here.</h4>
                     <Kanban />
-                <img src='/assets/img/profile.png'></img>
                     </div>
             </div>
         </div>

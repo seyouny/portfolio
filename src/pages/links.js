@@ -28,8 +28,13 @@ class Contact extends React.Component {
                     <h1>Where I'm From</h1>
                     <p>I'm from Garden Grove, California. </p>
                 </section>
-                <section class="questions-section">
-
+                <section class="location-section">
+                    <h1>Let's Connect!</h1>
+                    <p>GitHub: https://github.com/seyouny/</p>
+                    <p>LinkedIn: https://www.linkedin.com/in/seyouny/</p>
+                    <p>   </p>
+                    <p>   </p>
+                    <p>   </p>
                 </section>
 
                 
